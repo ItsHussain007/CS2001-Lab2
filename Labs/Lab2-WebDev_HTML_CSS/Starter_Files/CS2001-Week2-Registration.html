@@ -14,30 +14,43 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#Register">Register</a></li>
+                    <li><a href="#Login">Login</a></li>
+                    <li><a href="#Help">Help</a></li>
+
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <label for="Sea"></label>
+                    <input type="text" id="Search" name="Search"value="Search" ><br>
+
             </aside>
             <section>
                 <form class="center" novalidate>
-                <!-- ToDo: Implement the form containing 
-                           Name - type text
-                           email- type text
-                           password - type text
-                           Terms of Service - type checkbox
-                           Register - button
-                           Learn more - link
-                           Check lecture slides and the links on the slides to learn about forms
-                           and how to create a button that would react to a click Event
-                        -->
-                    <!-- Example given for user type checkboxes-->
+                    <label for="fname">Name:</label><br>
+                    <input type="text" id="fname" name="fname" ><br>
+                    <br>
+
+                    <label for="email-">Email:</label><br>
+                    <input type="text" id="email" name="email" ><br><br>
+
                     
+                    <label for="Password">Password:</label><br>
+                    <input type="text" id="Password" name="Password" ><br><br>
+
+                    <label for="Re-type Password">Re-type Password:</label><br>
+                    <input type="text" id="Re-type Password" name="Re-type Password" ><br><br>
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                    <input type="checkbox" id="terms of use" name="terms of use" value="terms of use">
+                    <label for="terms of use">I agree to the <a href="Terms of use ">Terms of use</a>and<a href=" Privacy Policy">Privacy Policy</a><br><br>
+                    <input type="submit" value="Register"><a href=" Learn more">Learn more</a></p>
 
                     <br><br>
                 </form>
